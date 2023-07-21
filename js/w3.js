@@ -1,5 +1,14 @@
-/* W3.JS 1.04 April 2019 by w3schools.com */
 "use strict";
+/* custom functions first (if needed) */
+
+function copyToClipboard(text) {
+    // Copy the text inside the text field
+    navigator.clipboard.writeText(text).then(
+        () => {alert("Copied to clipboard.");}
+    )
+}
+
+/* W3.JS 1.04 April 2019 by w3schools.com */
 var w3 = {};
 w3.hide = function (sel) {
     w3.hideElements(w3.getElements(sel));

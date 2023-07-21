@@ -14,18 +14,33 @@
 <div w3-include-html="/components/nav.html"></div>
 
   <!-- Contact Section -->
-  <div class="w3-container w3-padding-32 w3-green content" id="contact">
+  <div class="w3-container w3-padding-32 content" id="contact">
+    
     <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16"><b>Contact Us</b></h2>
-    <p>Lets get in touch and talk about your next project.</p>
-    <form action="/action_page.php" target="_blank">
-      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
-      <button class="w3-button w3-black w3-section" type="submit">
-        <i class="fa fa-paper-plane"></i> SEND MESSAGE
-      </button>
-    </form>
+
+    <div class="w3-bar">
+      <a href="mailto:selinadaycarepreschool@gmail.com" class="fa fa-envelope w3-left"></a>
+      <div class="w3-padding w3-left w3-padding-16">
+        If you have any questions, feel free to email us at 
+        <a href="mailto:selinadaycarepreschool@gmail.com">selinadaycarepreschool@gmail.com</a>
+        <i class="fa fa-clipboard" onclick="copyToClipboard('selinadaycarepreschool@gmail.com')"></i>
+        </div>
+    </div>
+
+    <div class="w3-bar w3-center">
+      <a href="https://www.yelp.com/biz/selinas-daycare-preschool-san-francisco" class="fa fa-yelp w3-left"></a>
+      <div class="w3-padding w3-left w3-padding-16">
+        Read reviews and get a glimpse into our daily activities on <a href="">Yelp</a>.
+      </div>
+    </div>
+
+    <div class="w3-bar w3-center">
+      <a href="https://goo.gl/maps/caDiXm54fjbKwHyV6" class="fa fa-map-marker w3-left"></a> 
+      <div class="w3-padding w3-left w3-padding-16">
+        Check out our location on <a href="https://goo.gl/maps/caDiXm54fjbKwHyV6">Google Maps</a>.
+      </div>
+    </div>
+
   </div>
 
 <!-- Image of location/map -->
