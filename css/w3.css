@@ -276,7 +276,7 @@ h6 {
     font-size: 22px;
     text-decoration: none;
     color: darkslateblue;
-    white-space: nowrap;
+    
 }
 
 /* icons */
@@ -290,6 +290,10 @@ h6 {
     font-size: 175% !important;
     text-align: center;
     text-decoration: none;
+}
+
+.fa-star {
+    color: gold;
 }
 
 .fa:hover {
@@ -612,7 +616,7 @@ a {
     position: relative;
     padding: 0;
     outline: 0;
-    width: 600px
+    width: 600px;
 }
 
 .w3-bar {
@@ -962,10 +966,6 @@ a {
     .w3-modal {
         padding-top: 50px
     }
-
-    .logo-name {
-        font-size: 2.75vw;
-    }
 }
 
 @media (min-width:993px) {
@@ -1004,14 +1004,37 @@ a {
 }
 
 .w3-top,
+.nav, 
 .w3-bottom {
     position: fixed;
     width: 100%;
     z-index: 1
 }
 
-.w3-top {
+.w3-top,
+.nav {
     top: 0
+}
+
+@media (min-width:1231px) {
+    .navlinks {
+        float: right;
+    }
+}
+
+/* For navbar response */
+@media (max-width:1231px) {
+    .nav {
+        position: static;
+    }
+    .nav-offset {
+        margin-top: -32px;
+    }
+    .navlinks {
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+    }
 }
 
 .w3-bottom {

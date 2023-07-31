@@ -12,49 +12,245 @@
 
 <!-- Navbar (sit on top) -->
 <div w3-include-html="/components/nav.html"></div>
-<script>
-    w3.includeHTML();
-</script>
 
 <div class="content">
 
 <!-- Testimonials Section -->
 <div class="w3-container w3-padding-32" id="testimonials">
-    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16"><b>Testimonials</b></h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
+    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16 nav-offset"><b>Testimonials</b></h2>
 </div>
 
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-      <h3>John Doe</h3>
-      <p class="w3-opacity">CEO & Founder</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+  <div class="w3-row-padding">
+    
+
+    <!-- Review 1 -->
+    <div class="w3-col l3 m6 w3-margin-bottom" style="height:450px;">  
+      
+      <div w3-include-html="/components/stars.html"></div>
+      <h3>
+        <img src="images/users/jacquelyn.jpeg" style="width:60px" class="w3-round" alt="jacquelyn">
+        Jacquelyn N.
+      </h3>
+      <p class="w3-opacity">March 23, 2018</p>
+      <p>
+        If you are new parents like I am, then I'm sure that you're overly cautious about who to entrust with your new bundle of joy.
+        I'm here to reassure you that Selina should be on the top of your list for consideration.
+      </p>
+
+      <!-- expand -->
+      <div>
+        <button class="w3-button w3-light-grey w3-block" 
+        onclick="document.getElementById('review1').style.display='block'">
+        Read More
+        </button>
+      </div>
+
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-      <h3>Jane Doe</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+
+    <!-- modal 1 -->
+  <div id="review1" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container w3-padding-16">
+        <span onclick="document.getElementById('review1').style.display='none'"
+        class="w3-button w3-display-topright w3">&times;</span>
+        <div w3-include-html="/components/stars.html"></div>
+        <h3>
+          <img src="images/users/jacquelyn.jpeg" style="width:60px" class="w3-round" alt="jacquelyn">
+          Jacquelyn N.
+        </h3>
+        <p class="w3-opacity">March 23, 2018 / San Francisco, CA</p>
+        <p>
+          If you are new parents like I am, then I'm sure that you're overly cautious about who to entrust with your new bundle of joy.
+          I'm here to reassure you that Selina should be on the top of your list for consideration. She has over 15 years of experience with children/infants and it really shows in her style of caring for the little ones in her home. 
+          Shes a natural at reading the needs of children as individuals and puts in a real effort to include the parents on what's going on through the day.
+          I really appreciated how Selina would send updates with pictures throughout the day. She would even write out my son's schedule for the day so we knew when and what he ate, his bowel movements, activities for the day, etc.
+          My son is 7 months old and he was always so excited when we got to Selina's house in the morning.
+          Selina also has Raina who helps out with the children. Raina is so sweet and super attentive to the children as well.
+          You can also tell that the other children enjoy being in Selina's home because they all seem to get along and hug Selina as they arrive and leave.
+          Selina is a gem! She's trust worthy, intuitive, up beat and most important of all a great care giver who really enjoys what she does.
+          I highly recommend her services! Thank you Selina!
+        </p>
+      </div>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
-      <h3>Mike Ross</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+  </div>
+    
+
+    <!-- Review 2 -->
+    <div class="w3-col l3 m6 w3-margin-bottom" style="height:450px;">
+
+      <div w3-include-html="/components/stars.html"></div>
+
+      <h3>
+        <img src="images/users/gisely.jpeg" style="width:60px" class="w3-round" alt="gisely">
+        Gisely F.
+      </h3>
+      <p class="w3-opacity">September 15, 2019</p>
+      <p>
+        When Selina opened the door for us, we felt that this is the right place for our two year-old daughter Viktoria, who is now three years old.
+        Selina is just a person you can trust.
+      </p>
+      
+      <!-- expand -->
+      <p>
+        <button class="w3-button w3-light-grey w3-block" 
+        onclick="document.getElementById('review2').style.display='block'">
+        Read More
+        </button>
+      </p>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
-      <h3>Dan Star</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+
+      <!-- modal 2 -->
+  <div id="review2" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container w3-padding-16">
+        <span onclick="document.getElementById('review2').style.display='none'"
+        class="w3-button w3-display-topright w3">&times;</span>
+        <div w3-include-html="/components/stars.html"></div>
+        <h3>
+          <img src="images/users/gisely.jpeg" style="width:60px" class="w3-round" alt="gisely">
+          Gisely F.
+        </h3>
+        <p class="w3-opacity">September 15, 2019 / Golden Gate Park, San Francisco, CA</p>
+
+        <div class="w3-twothird">
+          When Selina opened the door for us, we felt that this is the right place for our 2 year-old daughter Viktoria, who is now 3 years old. 
+            Selina is just a person you can trust. She cares about Viktoria's food, health, behavior, and sleep. 
+            Selina helped Viktoria transition from diapers just right. Viktoria has a unique program everyday 
+            (read books, paint, write, play in the backyard, go to the park, and more). 
+            Plus, Viktoria is learning Mandarin and we are so happy for that. 
+            My daughter always comes back home with her artwork and she is so proud.
+            I never pick up my daughter dirty or sad, she loves and we love Selina and Raina. 
+            They both do a terrific job. My daughter loves the homemade food. 
+            Selina always keeps in touch with us too. Everyday Selina gives update about Viktoria's day, plus pictures!! 
+            We are so lucky to be part of Selina's daycare! 
+            Viktoria's twin siblings always want to stay there too and they love Selina!!
+        </div>
+        <div class="w3-third">
+          <img src="images/gallery/gisely.jpeg" alt="gisely" class= "w3-border w3-padding-thumbnail" style="width: 100%;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Review 3 -->
+    <div class="w3-col l3 m6 w3-margin-bottom" style="height:450px;">
+
+      <div w3-include-html="/components/stars.html"></div>
+
+      <h3>
+        <img src="images/icons/i8-numbers-96.png" style="width:60px" class="w3-round" alt="vincent">
+        Vincent L.
+      </h3>
+      <p class="w3-opacity">September 6, 2021</p>
+      <p>
+        If you want to find someone who will care for your child like her own, this place is a great fit for you. 
+        Selina and Raina are fantastic.
+      </p>
+      <!-- expand -->
+      <p>
+        <button class="w3-button w3-light-grey w3-block" 
+        onclick="document.getElementById('review3').style.display='block'">
+        Read More
+        </button>
+      </p>
+    </div>
+
+    <!-- modal 3 -->
+  <div id="review3" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container w3-padding-16">
+        <span onclick="document.getElementById('review3').style.display='none'"
+        class="w3-button w3-display-topright w3">&times;</span>
+        <div w3-include-html="/components/stars.html"></div>
+        <h3>
+          <img src="images/icons/i8-numbers-96.png" style="width:60px" class="w3-round" alt="vincent">
+          Vincent L.
+        </h3>
+        <p class="w3-opacity">September 6, 2021 / SoMa, San Francisco, CA</p>
+        
+          <p>
+            If you want to find someone who will care for your child like her own, this is a great fit for you. 
+            Selina and Raina are fantastic. This was our daughter's first daycare at the age of 3.
+            Selina's home felt like a second home for her. 
+            The day was always filled with activities for the children and she found a way to rotate and keep things fresh for the children.    
+            She shared pictures with us and it was clear she intentionally tried to engage and teach the children new things all the time.  
+            Our daughter practiced her alphabet, numbers, counting and other preschool basics. 
+            She also enjoyed reading, art and crafts. Outside play in the backyard and gardening were among these activities.    
+            Raina also was incredibly warm and caring.  
+            They cooked lunch for the children and also had healthy snacks throughout the day.  
+          </p>
+          <p>
+            Our elementary aged daughter also spent some time with them and they helped accommodate her while schools were closed.    
+            She was also included in the activities and Selina and Raina were able to keep her happy and occupied during this difficult year!
+            We had to leave her daycare only because she had no space to increase the days our daughter could be with her.  
+            Otherwise we loved having our daughter in a very small group where she received such wonderful attention and care and we miss it.  
+            It was very hard to leave a place we are so happy and comfortable with because we felt our daughter was very lovingly cared for.
+          </p>
+        
+      </div>
+    </div>
+  </div>
+
+    <!-- Review 4 -->
+    <div class="w3-col l3 m6 w3-margin-bottom" style="height:450px;">
+
+      <div w3-include-html="/components/stars.html"></div>
+
+      <h3>
+        <img src="images/icons/edublocks.ico" style="width:60px" class="w3-round" alt="robert">
+        Robert I.
+      </h3>
+      <p class="w3-opacity">January 16, 2022</p>
+      <p>
+        Our son has been with Selina since he was 11 months old he is now almost five years old. 
+        We looked into several different places and after meeting Selina we knew she was the right choice.
+      </p>
+      <!-- expand -->
+      <p>
+        <button class="w3-button w3-light-grey w3-block" 
+        onclick="document.getElementById('review4').style.display='block'">
+        Read More
+        </button>
+      </p>
+    </div>
+  </div>
+
+    <!-- modal 4 -->
+    <div id="review4" class="w3-modal">
+      <div class="w3-modal-content">
+        <div class="w3-container w3-padding-16">
+          <span onclick="document.getElementById('review4').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+          <div w3-include-html="/components/stars.html"></div>
+          <h3>
+            <img src="images/icons/edublocks.ico" style="width:60px" class="w3-round" alt="robert">
+            Robert I.
+          </h3>
+          <p class="w3-opacity">January 16, 2022 / San Francisco, CA</p>
+          
+            <p>
+              Our son has been with Selina since he was 11 months old he is now almost 5 years old. 
+              We looked into several different places and after meeting Selina we knew she was the right choice. 
+              She is very good with children and the children love and respect her. 
+              Selina is experienced and knows the importance of education, healthy eating and safety. 
+              The five year-olds that graduate her program are prepared for kindergarten. 
+              We owe a lot of gratitude to Selina and Raina we feel lucky to have met them. 
+              I love how in tune she is with our child and always gives us feedback on how he's doing.
+              Thank you Selina and Raina, From the Ingham family.
+            </p>
+          
+        </div>
+      </div>
+    </div>
+
+
+  <!-- Yelp stuff -->
+  <div class="w3-container w3-padding">
+    <div class="w3-center">
+      <a href="https://www.yelp.com/biz/selinas-daycare-preschool-san-francisco" class="fa fa-yelp" style="color: #EA3B2E;"></a>
+        You can read more reviews on 
+        <a href="https://www.yelp.com/biz/selinas-daycare-preschool-san-francisco">Yelp</a>.
     </div>
   </div>
 
@@ -65,6 +261,14 @@
 
 <script>
   w3.includeHTML();
+
+  document.onkeydown = function (e) {
+    e = e || window.event;
+    // exit out of modals with esc key
+    if(e.key === "Escape") {
+      w3.hideElements(document.getElementsByClassName("w3-modal"));
+    }
+  };
 </script>
 
 </body>

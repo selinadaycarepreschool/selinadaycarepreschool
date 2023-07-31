@@ -15,76 +15,186 @@
 
 
 <!-- Gallery Section -->
-<div class="w3-container w3-padding-32" id="gallery">
-    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16"><b>Gallery</b></h2>
+<div class="w3-container w3-padding-top-32" id="gallery">
+    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16 nav-offset">
+      Gallery
+    </h2>
 </div>
 
-<div class="w3-row-padding w3-yellow">
+<div class="w3-row-padding">
 
-    <div class="w3-col l3 m6 w3-margin-bottom w3-padding-thumbnail w3-border">
-      <div class="w3-display-container w3-green">
-
-        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-
-        <img src="/images/gallery/math.jpeg" alt="House" style="width:100%">
-      </div>
-    </div>
-
-    <div class="w3-col l3 m6 w3-margin-bottom w3-padding-thumbnail w3-border">
+    <!-- science image -->
+    <div class="w3-col l3 m6 w3-margin-bottom w3-padding-thumbnail w3-border w3-hover-shadow"
+    onclick="document.getElementById('sciencejpg').style.display='block'">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-        <img src="/images/gallery/science.jpeg" alt="House" style="width:100%">
+        <img src="/images/gallery/science.jpeg" alt="science" style="width:100%">
       </div>
     </div>
-
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-        <img src="/images/gallery/paint.jpeg" alt="House" style="width:100%">
-      </div>
-    </div>
-
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-        <img src="/images/gallery/yardplay.jpeg" alt="House" style="width:100%">
-      </div>
-    </div>
-
-    <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-display-container">
-          <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-          <img src="/images/gallery/yardplay.jpeg" alt="House" style="width:100%">
+    <!-- modal -->
+    <div id="sciencejpg" class="w3-modal">
+      <div class="w3-modal-content">
+        <div class="w3-container w3-padding-thumbnail">
+          <span onclick="document.getElementById('sciencejpg').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+          <img src="/images/gallery/science.jpeg" alt="science" style="width:100%;">
         </div>
+      </div>
     </div>
+
+
+    <!-- paint image -->
+    <div class="w3-col l3 m6 w3-margin-bottom w3-padding-thumbnail w3-border w3-hover-shadow"
+    onclick="document.getElementById('paintjpg').style.display='block'">
+      <div class="w3-display-container">
+        <img src="/images/gallery/paint.jpeg" alt="paint" style="width:100%">
+      </div>
+    </div>
+    <!-- modal -->
+    <div id="paintjpg" class="w3-modal">
+      <div class="w3-modal-content">
+        <div class="w3-container w3-padding-thumbnail">
+          <span onclick="document.getElementById('paintjpg').style.display='none'"
+          class="w3-button w3-display-topright w3">&times;</span>
+          <img src="/images/gallery/paint.jpeg" alt="paint" style="width: 100%";>
+        </div>
+      </div>
+    </div>
+
+    <!-- collage image -->
+    <div class="w3-col l3 m6 w3-margin-bottom w3-padding-thumbnail w3-border w3-hover-shadow"
+    onclick="document.getElementById('collage').style.display='block'">
+      <div class="w3-display-container">
+        <img src="/images/gallery/collage.jpg" alt="paint" style="width:100%">
+      </div>
+    </div>
+    <!-- modal -->
+    <div id="collage" class="w3-modal">
+      <div class="w3-modal-content">
+        <div class="w3-container w3-padding-thumbnail">
+          <span onclick="document.getElementById('collage').style.display='none'"
+          class="w3-button w3-display-topright w3">&times;</span>
+          <img src="/images/gallery/collage.jpg" alt="paint" style="width: 100%";>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- sorting image -->
+  <div class="w3-col l3 m6 w3-margin-bottom w3-padding-thumbnail w3-border w3-hover-shadow"
+  onclick="document.getElementById('sortjpg').style.display='block'">
+    <div class="w3-display-container">
+      <img src="/images/gallery/sorting.jpg" alt="sorting" style="width:100%">
+    </div>
+  </div>
+  <!-- modal -->
+  <div id="sortjpg" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container w3-padding-thumbnail">
+        <span onclick="document.getElementById('sortjpg').style.display='none'"
+        class="w3-button w3-display-topright w3-white">&times;</span>
+        <img src="/images/gallery/sorting.jpg" alt="sorting" style="width: 100%";>
+      </div>
+    </div>
+  </div>
+  
+  <!-- yard image -->
+  <div class="w3-col l3 m6 w3-margin-bottom w3-padding-thumbnail w3-border w3-hover-shadow"
+  onclick="document.getElementById('yardjpg').style.display='block'">
+    <div class="w3-display-container">
+      <img src="/images/gallery/yardplay.jpeg" alt="yard play" style="width:100%">
+    </div>
+  </div>
+  <!-- modal -->
+  <div id="yardjpg" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container w3-padding-thumbnail">
+        <span onclick="document.getElementById('yardjpg').style.display='none'"
+        class="w3-button w3-display-topright w3-white">&times;</span>
+        <img src="/images/gallery/yardplay.jpeg" alt="yard play" style="width: 100%";>
+      </div>
+    </div>
+  </div>
 
 </div>
 
-<div class="w3-row-padding w3-blue">
-  <div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-row-padding">
+
+  <!-- backyard image -->
+  <div class="w3-col l3 m6 w3-margin-bottom w3-padding-thumbnail w3-border w3-hover-shadow"
+  onclick="document.getElementById('byjpg').style.display='block'">
     <div class="w3-display-container">
-      <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-      <img src="/images/gallery/blockplay.jpeg" alt="House" style="width:99%">
+      <img src="/images/gallery/backyard.jpg" alt="paint" style="width:100%">
     </div>
   </div>
-  <div class="w3-col l3 m6 w3-margin-bottom">
-    <div class="w3-display-container">
-      <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-      <img src="/images/gallery/jump.jpeg" alt="House" style="width:99%">
+  <!-- modal -->
+  <div id="byjpg" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container w3-padding-thumbnail">
+        <span onclick="document.getElementById('byjpg').style.display='none'"
+        class="w3-button w3-display-topright w3">&times;</span>
+        <img src="/images/gallery/backyard.jpg" alt="blockplay" style="width: 100%";>
+      </div>
     </div>
   </div>
-  <div class="w3-col l3 m6 w3-margin-bottom">
+
+  <!-- tower image -->
+  <div class="w3-col l3 m6 w3-margin-bottom w3-padding-thumbnail w3-border w3-hover-shadow"
+  onclick="document.getElementById('towerjpg').style.display='block'">
     <div class="w3-display-container">
-      <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-      <img src="/images/gallery/tower.jpeg" alt="House" style="width:99%">
+      <img src="/images/gallery/tower.jpeg" alt="tower" style="width:100%">
     </div>
   </div>
-  <div class="w3-col l3 m6 w3-margin-bottom">
-    <div class="w3-display-container">
-      <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-      <img src="" alt="House" style="width:99%">
+  <!-- modal -->
+  <div id="towerjpg" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container w3-padding-thumbnail">
+        <span onclick="document.getElementById('towerjpg').style.display='none'"
+        class="w3-button w3-display-topright w3">&times;</span>
+        <img src="/images/gallery/tower.jpeg" alt="tower" style="width: 100%";>
+      </div>
     </div>
   </div>
+
+  <!-- outdoor image -->
+  <div class="w3-col l3 m6 w3-margin-bottom w3-padding-thumbnail w3-border w3-hover-shadow"
+  onclick="document.getElementById('outdoorjpg').style.display='block'">
+    <div class="w3-display-container">
+      <img src="/images/gallery/teamwork.jpg" alt="outdoor" style="width:100%">
+    </div>
+  </div>
+  <!-- modal -->
+  <div id="outdoorjpg" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container w3-padding-thumbnail">
+        <span onclick="document.getElementById('outdoorjpg').style.display='none'"
+        class="w3-button w3-display-topright w3-white">&times;</span>
+        <img src="/images/gallery/teamwork.jpg" alt="outdoor" style="width: 100%";>
+      </div>
+    </div>
+  </div>
+
+
+  <!--math image -->
+  <div class="w3-col l3 m6 w3-margin-bottom w3-padding-thumbnail w3-border w3-hover-shadow"
+  onclick="document.getElementById('mathjpg').style.display='block'">
+    <div class="w3-display-container">
+      <img src="/images/gallery/math.jpeg" alt="House" style="width:100%">
+    </div>
+  </div>
+  <!-- modal -->
+  <div id="mathjpg" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container w3-padding-thumbnail">
+        <span onclick="document.getElementById('mathjpg').style.display='none'"
+        class="w3-button w3-display-topright w3">&times;</span>
+        <img src="/images/gallery/math.jpeg" alt="math" style="width: 100%";>
+      </div>
+    </div>
+  </div>
+
+  
+
+
 </div>
 
 
@@ -94,6 +204,14 @@
 
 <script>
   w3.includeHTML();
+
+  document.onkeydown = function (e) {
+    e = e || window.event;
+    // exit out of modals with esc key
+    if(e.key === "Escape") {
+      w3.hideElements(document.getElementsByClassName("w3-modal"));
+    }
+  };
 </script>
 
 </body>
