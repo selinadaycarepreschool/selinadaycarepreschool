@@ -272,7 +272,7 @@ h6 {
 }
 
 .logo-name {
-    font-family: Chalkduster;
+    font-family: "Chalkduster", "Ink Free", fantasy;
     font-size: 22px;
     text-decoration: none;
     color: darkslateblue;
@@ -309,7 +309,7 @@ h6 {
 }
 
 .w3-cursive {
-    font-family: cursive
+    font-family: "Apple Chancery", cursive;
 }
 
 .w3-monospace {
